@@ -1,0 +1,164 @@
+/* style.css - Light theme con diseño de página real */
+
+/* Importar fuente desde Google Fonts (añadir en el <head>)
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> */
+
+/* Reset básico */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --bg-color: #f9fafb;
+    --primary-color: #ffffff;
+    --accent-color: #4f46e5;
+    --accent-light: #c7d2fe;
+    --text-color: #1f2937;
+    --subtext-color: #4b5563;
+    --border-color: #e5e7eb;
+    --shadow-color: rgba(0, 0, 0, 0.05);
+    --radius: 8px;
+    --font-sans: 'Inter', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 0;
+  }
+  
+  /* Navbar / Header */
+  header {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar h1 {
+    font-size: 1.75rem;
+    color: var(--accent-color);
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+  }
+  
+  .navbar a:hover {
+    color: var(--accent-light);
+  }
+  
+  /* Hero/Banner */
+  .hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, var(--accent-light), var(--accent-color));
+    color: #ffffff;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.125rem;
+  }
+  
+  /* Main Layout */
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 2rem;
+  }
+  
+  /* Secciones */
+  .materia {
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px var(--shadow-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .materia:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px var(--shadow-color);
+  }
+  
+  .materia h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-light);
+    padding-bottom: 0.5rem;
+  }
+  
+  .materia ul,
+  .materia li,
+  article ul {
+    list-style: disc inside;
+    margin-left: 0;
+  }
+  
+  article h3 {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  article p,
+  .materia p {
+    color: var(--subtext-color);
+    margin-bottom: 1rem;
+  }
+  
+  a.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+  }
+  
+  a.btn:hover {
+    background-color: var(--accent-light);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--primary-color);
+    border-top: 1px solid var(--border-color);
+    color: var(--subtext-color);
+    font-size: 0.875rem;
+  }
+  
