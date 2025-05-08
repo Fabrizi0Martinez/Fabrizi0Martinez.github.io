@@ -1,1 +1,3 @@
-YUP
+REFLEXIÓN:
+
+A lo largo de mi formación académica y profesional, he descubierto que la verdadera fortaleza de un ingeniero no está solamente en su dominio técnico, sino en su capacidad para adaptarse, colaborar y comunicar ideas de manera efectiva. Cada proyecto en el que he participado ha representado un reto que me ha impulsado a crecer no solo como programador, sino como líder. Me gusta resolver problemas que tengan un impacto tangible en la sociedad, y encuentro gran satisfacción en convertir ideas complejas en soluciones accesibles y funcionales mediante la colaboracion y el trabajo en equipo. Mi objetivo es seguir aprendiendo y aportar valor con creatividad, responsabilidad y compromiso, donde sea que me encuentre.
